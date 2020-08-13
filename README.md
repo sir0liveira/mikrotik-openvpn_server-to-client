@@ -229,12 +229,15 @@ UxRGJgC9nrhkPTN7ZClLZ4t9vL92CMYHG55qkhZlNTT0X85+enCZfWZMq9pKK5Ja
 ## *10 – Crie o arquivo secret.txt*
 
 Conteúdo do arquivo, não coloque espaços ou saltos de linhas:
-
-<span style="color:red;">-->(inicio do arquivo)</span>  
+```diff
+- -->(inicio do arquivo)
+```
 joao.santos  
 #123!321#  
-<span style="color:red;"><--(fim do arquivo)</span>
 
+```diff
+- <--(fim do arquivo)
+```
 Obs.  
 name (joao.santos) e password (#123!321#) foram criados no passo 6
 
