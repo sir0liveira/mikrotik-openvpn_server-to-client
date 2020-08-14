@@ -8,7 +8,7 @@ Use o terminal do mikrotik para executar os comandos, ou pelo ssh.
 
 /certificate sign ca ca-crl-host=127.0.0.1 name=”ca”
 
-/certificate add name=server country=”br” state=”sao_paulo” locality=”cidade” organization=”organizacao” unit=”setor|departamento” common-name=”ip_publico” key-size=4096 days-valid=3650 key-usage=digital-signature,key-encipherment,tls-server
+/certificate add name=server country=”br” state=”sao_paulo” locality=”cidade” organization=”organizacao” unit=”setor|departamento” common-name=”ip_publico” key-size=4096 days-valid=3650 key-usage=digital-signature,key-encipherment,tls-server trusted=yes
 
 /certificate sign server ca=”ca” name=”server”
 
@@ -24,7 +24,7 @@ Use o terminal do mikrotik para executar os comandos, ou pelo ssh.
 
 /certificate export-certificate ca export-passphrase=””
 
-/certificate export-certificate nome-cliente export-passphrase=senha-cliente
+/certificate export-certificate nome-cliente export-passphrase=crie-senha-cliente
 
 ### *4 - Criar Pool*
 
@@ -51,9 +51,9 @@ port = porta da vpn (padrão 1194)
 
 ### *8 - Faça o download dos seguintes certificados:*
 
-ca.crt  
-nome-cliente.crt  
-nome-cliente.key
+cert_export_ca.crt  
+cert_export_nome-cliente.crt  
+cert_export_nome-cliente.key  
 
 ### *8.1 - Clique em Files*
 ![Imagem-1](https://uploaddeimagens.com.br/images/002/827/458/full/1.png?1597336852)
@@ -69,9 +69,9 @@ nome-cliente.key
 
 Obs.
 
-\<ca> conteúdo do arquivo ca.crt \</ca>  
-\<cert> conteúdo do arquivo nome-cliente.crt \</cert>  
-\<key> conteúdo do arquivo nome-cliente.key \</key>
+\<ca> conteúdo do arquivo cert_export_ca.crt \</ca>  
+\<cert> conteúdo do arquivo cert_export_nome-cliente.crt \</cert>  
+\<key> conteúdo do arquivo cert_export_nome-cliente.key \</key>
 
 Exemplo do conteúdo do arquivo:
 
