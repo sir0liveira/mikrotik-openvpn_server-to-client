@@ -34,7 +34,7 @@ Criar uma Pool com o nome de vpn e colocar o range que vai ser dado ao usuário 
 
 ### *5 – Adicionar profile* 
 
-/ppp profile add name=vpn local-address=10.10.10.1 remote-address=vpn change-tcp-mss=yes use-upnp=default
+/ppp profile add name=vpn local-address=10.10.10.1 remote-address=vpn change-tcp-mss=yes use-compression=no use-encryption=required use-upnp=default
 
 ### *6 - Criar um novo PPP Secret*
 
