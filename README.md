@@ -60,10 +60,10 @@ cert_export_nome-cliente.key
 
 ### *8.2 - Clique com o direito no arquivo e em Download*
 
-![Imagem-2](https://uploaddeimagens.com.br/images/002/827/470/full/2.png?1597337043)
+![Imagem-2](https://uploaddeimagens.com.br/images/002/830/229/original/4.png?1597430188)
 
 ### *8.3 – Escolha onde salvar*
-![Imagem-3](https://uploaddeimagens.com.br/images/002/827/472/original/3.png?1597337098)
+![Imagem-3](https://uploaddeimagens.com.br/images/002/830/216/original/3.png?1597429938)
 
 ### *9 – Crie o arquivo: nome-arquivo.ovpn*
 
